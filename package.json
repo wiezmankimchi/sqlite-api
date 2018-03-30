@@ -1,0 +1,18 @@
+{
+  "name": "sqlite-api",
+  "version": "1.0.0",
+  "description": "sqlite api node.js based",
+  "main": "server.js",
+  "author": "wiezmankimchi <wiezmankimchi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "npm": "^5.8.0",
+    "sqlite3": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.2"
+  }
+}
