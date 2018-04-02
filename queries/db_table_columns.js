@@ -2,7 +2,7 @@
 
 const AUTHORS_COLUMNS = {id, name, sort, link};
 const BOOKS_COLUMNS = {id, title, sort, timestamp, pubdate, series_index, author_sort, isbn, lccn, path, flags, uuid, has_cover, last_modified};
-const BOOK_AUTHORS_LINK_COLUMNS = {id, book, author};
+const BOOKS_AUTHORS_LINK_COLUMNS = {id, book, author};
 const BOOKS_LANGUAGES_LINK_COLUMNS = {id, name};
 const BOOKS_LANGUAGES_LINK_COLUMNS = {id, book, lang_code, item_order};
 const BOOKS_PLUGIN_DATA_COLUMNS = {};
