@@ -22,7 +22,7 @@ var tags_router = express.Router();
 tags_router.use(function(req, res, next) {
   // Website you wish to allow to connect
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-  console.log("Something is happening");
+  console.log("Tags route is in use");
   next(); //go to the next routes
 });
 
@@ -39,8 +39,8 @@ tags_router.get("/", function(req, res) {
 // /tags/:l         GET     Get all tags that starts with :l
 // /tags/like/:l    GET     Get all tags like :l
 
-//Authors
-const TAGS_ALL = "select * from tags";
+// All Tags
+const TAGS_ALL = "select * from tags order by name";
 let sql = TAGS_ALL;
 
 tags_router.route("/all").get(function(req, res) {
@@ -50,7 +50,7 @@ tags_router.route("/all").get(function(req, res) {
   });
 });
 
-//author starts with :l
+//tags starts with :l
 tags_router.route("/:l").get(function(req, res) {
   sql = TAGS_ALL;
   sql = sql + " where name like '" + req.params.l + "%'";
@@ -60,7 +60,7 @@ tags_router.route("/:l").get(function(req, res) {
   });
 });
 
-//author like with :l
+//tags like with :l
 tags_router.route("/like/:l").get(function(req, res) {
   sql = TAGS_ALL;
   sql = sql + " where name like '%" + req.params.l + "%'";

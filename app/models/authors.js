@@ -1,12 +1,12 @@
-const sqlite3 = require("sqlite3").verbose();
+// const sqlite3 = require("sqlite3").verbose();
 
-let db = new sqlite3.Database("./../../db/metadata.db", err => {
-  if (err) {
-    console.error(err.message);
-  } else {
-    console.log("Connected to the calibre database - authors");
-  }
-});
+// let db = new sqlite3.Database("./../../db/metadata.db", err => {
+//   if (err) {
+//     console.error(err.message);
+//   } else {
+//     console.log("Connected to the calibre database - authors");
+//   }
+// });
 
 // table description
 const AUTHORS = { id: Number, name: String, sort: String, link: String };

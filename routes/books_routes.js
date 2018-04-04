@@ -16,7 +16,7 @@ var books_router = express.Router();
 books_router.use(function(req, res, next) {
   // Website you wish to allow to connect
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-  console.log("Something is happening");
+  console.log("Books Route is in use");
   next(); //go to the next routes
 });
 
