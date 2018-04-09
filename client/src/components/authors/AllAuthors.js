@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class AllTags extends Component {
+class AllAuthors extends Component {
   render() {
-    return <div>AllTags</div>;
+    return <div>AllAuthors</div>;
   }
 }
 
-export default AllTags;
+export default AllAuthors;

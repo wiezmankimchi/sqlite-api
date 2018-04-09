@@ -58,3 +58,7 @@ h1 {
     transform: rotate(360deg);
   }
 }
+
+.form-font-08 {
+  font-size: 0.8rem;
+}

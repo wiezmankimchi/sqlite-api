@@ -1,12 +1,5 @@
 import React from "react";
-import AllTags from "./AllTags";
-import TagByLetter from "./TagByLetter";
 
-const Tags = () => (
-  <div>
-    <AllTags />
-    <TagByLetter />
-  </div>
-);
+const Authors = () => <div>Authors</div>;
 
-export default Tags;
+export default Authors;

@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Books from "./books";
 import Authors from "./authors";
 import Tags from "./tags";
+import LastAdded from "./lastadded";
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -12,7 +13,8 @@ import Tags from "./tags";
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path="/books" component={Books} />
+      <Route exact path="/" component={LastAdded} />
+      <Route path="/books" component={Books} />
       <Route path="/authors" component={Authors} />
       <Route path="/tags" component={Tags} />
     </Switch>
